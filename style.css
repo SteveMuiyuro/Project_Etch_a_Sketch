@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Prompt&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Prompt", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  height: 80vh;
+  margin: auto 300px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  border-radius: 10px;
+}
+
+.selection {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-color: #d1d5db;
+  box-shadow: 0px 0px 10px #d1d5db;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-rows: 100px 100px 80px 100px 100px;
+}
+
+.main {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-color: #d1d5db;
+  box-shadow: 0px 0px 10px #d1d5db;
+}
+
+.select_color {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+.select_pixel {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.range > input {
+  border-width: 2px;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+}
+
+.erase_button,
+.reset_button,
+.grid_size {
+  margin-top: 70px;
+  margin-left: 10px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #bef264, #fde047);
+  transition: all 0.3s ease-out;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px #84cc16;
+}
+
+.main {
+  display: grid;
+  /* grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); */
+}
+
+.new_grid {
+  background-color: #d1d5db;
+  border: 1px solid #64748b;
+}
+
+input {
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid_content {
+  text-align: center;
+}
